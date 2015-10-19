@@ -7,6 +7,7 @@ import subprocess
 import tornado.ioloop
 import tornado.web
 import tornado.autoreload
+import tornado.options
 from tornado.log import enable_pretty_logging
 
 PATH = os.path.abspath(os.path.dirname(__file__))
@@ -61,10 +62,12 @@ application = tornado.web.Application([
 ])
 
 if __name__ == "__main__":
-  enable_pretty_logging()
-  
   if '-dev' in sys.argv:
+    enable_pretty_logging()
     tornado.autoreload.start()
+    
+  else:
+    tornado.options.parse_command_line()
     
   port = int(os.environ.get('PORT', '8000'))
   application.listen(port, address="127.0.0.1")
