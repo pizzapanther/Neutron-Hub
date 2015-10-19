@@ -15,6 +15,7 @@ PATH = os.path.abspath(os.path.dirname(__file__))
 DOMAINS = {
   'www.neutronracer.com': 'Neutron-Racer',
   'manx.neutrondrive.com': 'Neutron-Racer',
+  'neutron-hub.herokuapp.com': 'Neutron-Racer',
 }
 
 REDIRECTS = {
