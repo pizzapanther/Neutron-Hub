@@ -52,9 +52,8 @@ class HubHandler (tornado.web.StaticFileHandler):
           url = redirect
           
         self.redirect(url)
+        return None
         
-      return None
-      
     raise tornado.web.HTTPError(404, "Page Not Found")
     
 application = tornado.web.Application([
