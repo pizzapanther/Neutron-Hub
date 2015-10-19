@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import subprocess
 
 import tornado.ioloop
@@ -15,9 +16,24 @@ DOMAINS = {
   'manx.neutrondrive.com': 'Neutron-Racer',
 }
 
+REDIRECTS = {
+  'springfieldcollege1968.com': 'http://www.springfieldcollege1968.com/ocapp/cms/',
+  
+  'neutrondrive.com': 'https://www.neutrondrive.com/{}',
+  'neutronide.com': 'https://www.neutrondrive.com/{}',
+  'neutrondev.com': 'https://www.neutrondrive.com/{}',
+  
+  'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
+  
+  'sailblancaluna.com': 'http://www.sailblancaluna.com/{}',
+}
+
 class HubHandler (tornado.web.StaticFileHandler):
   def parse_url_path (self, url_path):
     url_path = os.path.join(DOMAINS[self.domain], url_path)
+    if url_path.endswith('/'):
+      url_path += 'index.html'
+      
     return url_path
     
   def get (self, path, include_body=True):
@@ -26,11 +42,19 @@ class HubHandler (tornado.web.StaticFileHandler):
         self.domain = domain.lower()
         return super(HubHandler, self).get(path, include_body)
         
-    url = 'https://{}'.format(self.request.host)
-    if path:
-      url += '/' + path
+    for domain, redirect in REDIRECTS.items():
+      if domain.lower() in self.request.host:
+        if '{}' in redirect:
+          url = redirect.format(path)
+          
+        else:
+          url = redirect
+          
+        self.redirect(url)
+        
+      return None
       
-    self.redirect(url)
+    raise tornado.web.HTTPError(404, "Page Not Found")
     
 application = tornado.web.Application([
   (r"/(.*)", HubHandler, {'path': PATH}),
@@ -38,8 +62,11 @@ application = tornado.web.Application([
 
 if __name__ == "__main__":
   enable_pretty_logging()
-  tornado.autoreload.start()
   
-  application.listen(8000, address="127.0.0.1")
+  if '-dev' in sys.argv:
+    tornado.autoreload.start()
+    
+  port = int(os.environ.get('PORT', '8000'))
+  application.listen(port, address="127.0.0.1")
   tornado.ioloop.IOLoop.instance().start()
   
