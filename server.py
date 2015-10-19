@@ -14,7 +14,7 @@ PATH = os.path.abspath(os.path.dirname(__file__))
 
 DOMAINS = {
   'manx.neutrondrive.com': 'Neutron-Racer',
-  'neutron-hub.herokuapp.com': 'Neutron-Racer',
+  'neutron-racer.herokuapp.com': 'Neutron-Racer',
 }
 
 REDIRECTS = {
@@ -24,7 +24,7 @@ REDIRECTS = {
   'neutronide.com': 'https://www.neutrondrive.com/{}',
   'neutrondev.com': 'https://www.neutrondrive.com/{}',
   
-  'neutronracer.com': 'https://neutron-hub.herokuapp.com/{}',
+  'neutronracer.com': 'https://neutron-racer.herokuapp.com/{}',
   
   'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
   
