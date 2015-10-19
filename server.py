@@ -13,7 +13,6 @@ from tornado.log import enable_pretty_logging
 PATH = os.path.abspath(os.path.dirname(__file__))
 
 DOMAINS = {
-  'www.neutronracer.com': 'Neutron-Racer',
   'manx.neutrondrive.com': 'Neutron-Racer',
   'neutron-hub.herokuapp.com': 'Neutron-Racer',
 }
@@ -24,6 +23,8 @@ REDIRECTS = {
   'neutrondrive.com': 'https://www.neutrondrive.com/{}',
   'neutronide.com': 'https://www.neutrondrive.com/{}',
   'neutrondev.com': 'https://www.neutrondrive.com/{}',
+  
+  'neutronracer.com': 'https://neutron-hub.herokuapp.com/{}',
   
   'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
   
