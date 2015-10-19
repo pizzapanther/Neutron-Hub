@@ -61,14 +61,17 @@ application = tornado.web.Application([
 ])
 
 if __name__ == "__main__":
+  kwargs = {}
+  
   if '-dev' in sys.argv:
     enable_pretty_logging()
     tornado.autoreload.start()
+    kwargs['address'] = "127.0.0.1"
     
   else:
     tornado.options.parse_command_line()
     
   port = int(os.environ.get('PORT', '8000'))
-  application.listen(port, address="127.0.0.1")
+  application.listen(port, **kwargs)
   tornado.ioloop.IOLoop.instance().start()
   
