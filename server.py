@@ -11,14 +11,19 @@ from tornado.log import enable_pretty_logging
 PATH = os.path.abspath(os.path.dirname(__file__))
 
 DOMAINS = {
-  'www.neutronracer.com': '',
-  'manx.neutrondrive.com': '',
+  'www.neutronracer.com': 'Neutron-Racer',
+  'manx.neutrondrive.com': 'Neutron-Racer',
 }
 
 class HubHandler (tornado.web.StaticFileHandler):
+  def parse_url_path (self, url_path):
+    url_path = os.path.join(DOMAINS[self.domain], url_path)
+    return url_path
+    
   def get (self, path, include_body=True):
     for domain, value in DOMAINS.items():
       if domain.lower() in self.request.host:
+        self.domain = domain.lower()
         return super(HubHandler, self).get(path, include_body)
         
     url = 'https://{}'.format(self.request.host)
