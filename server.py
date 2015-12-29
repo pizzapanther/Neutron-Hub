@@ -13,8 +13,9 @@ from tornado.log import enable_pretty_logging
 PATH = os.path.abspath(os.path.dirname(__file__))
 
 DOMAINS = {
-  'manx.neutrondrive.com': 'Neutron-Racer',
+  'manx.neutrondrive.com': 'NeutronBlog',
   'neutron-racer.herokuapp.com': 'Neutron-Racer',
+  'blog.neutrondrive.com': 'NeutronBlog',
 }
 
 REDIRECTS = {
@@ -32,9 +33,19 @@ REDIRECTS = {
 }
 
 class HubHandler (tornado.web.StaticFileHandler):
+  def validate_absolute_path (self, root, absolute_path):
+    try:
+      return super().validate_absolute_path(root, absolute_path)
+      
+    except tornado.web.HTTPError as error:
+      if error.status_code == 404:
+        return os.path.join(PATH, DOMAINS[self.domain], 'index.html')
+        
+      raise
+      
   def parse_url_path (self, url_path):
     url_path = os.path.join(DOMAINS[self.domain], url_path)
-    if url_path.endswith('/'):
+    if url_path.endswith('/') or not url_path:
       url_path += 'index.html'
       
     return url_path

@@ -1,3 +1,6 @@
 [submodule "Neutron-Racer"]
 	path = Neutron-Racer
 	url = https://github.com/pizzapanther/Neutron-Racer
+[submodule "NeutronBlog"]
+	path = NeutronBlog
+	url = https://github.com/pizzapanther/NeutronBlog.git
