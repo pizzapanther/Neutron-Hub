@@ -16,6 +16,7 @@ DOMAINS = {
   'manx.neutrondrive.com': 'NeutronBlog',
   'neutron-racer.herokuapp.com': 'Neutron-Racer',
   'blog.neutrondrive.com': 'NeutronBlog',
+  'www.godlovedtheworld.com': 'glw-site',
 }
 
 REDIRECTS = {
@@ -80,6 +81,7 @@ if __name__ == "__main__":
     enable_pretty_logging()
     tornado.autoreload.start()
     kwargs['address'] = "127.0.0.1"
+    DOMAINS['manx.neutrondrive.com'] = sys.argv[-1]
     
   else:
     tornado.options.parse_command_line()

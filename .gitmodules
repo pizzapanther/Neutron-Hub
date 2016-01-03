@@ -4,3 +4,6 @@
 [submodule "NeutronBlog"]
 	path = NeutronBlog
 	url = https://github.com/pizzapanther/NeutronBlog.git
+[submodule "glw-site"]
+	path = glw-site
+	url = git@github.com:pizzapanther/glw-site.git
