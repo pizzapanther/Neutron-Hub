@@ -31,6 +31,8 @@ REDIRECTS = {
   'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
   
   'sailblancaluna.com': 'http://www.sailblancaluna.com/{}',
+  
+  'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
 }
 
 class HubHandler (tornado.web.StaticFileHandler):
