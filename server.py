@@ -22,9 +22,9 @@ DOMAINS = {
 REDIRECTS = {
   'springfieldcollege1968.com': 'http://www.springfieldcollege1968.com/ocapp/cms/',
   
-  'neutrondrive.com': 'https://www.neutrondrive.com/{}',
-  'neutronide.com': 'https://www.neutrondrive.com/{}',
-  'neutrondev.com': 'https://www.neutrondrive.com/{}',
+  'neutrondrive.com': 'https://super.neutrondrive.com/{}',
+  'neutronide.com': 'https://super.neutrondrive.com/{}',
+  'neutrondev.com': 'https://super.neutrondrive.com/{}',
   
   'neutronracer.com': 'https://neutron-racer.herokuapp.com/{}',
   
