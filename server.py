@@ -22,7 +22,6 @@ DOMAINS = {
 REDIRECTS = {
   'springfieldcollege1968.com': 'http://www.springfieldcollege1968.com/ocapp/cms/',
   
-  'neutrondrive.com': 'https://super.neutrondrive.com/{}',
   'neutronide.com': 'https://super.neutrondrive.com/{}',
   'neutrondev.com': 'https://super.neutrondrive.com/{}',
   
@@ -33,6 +32,9 @@ REDIRECTS = {
   'sailblancaluna.com': 'http://www.sailblancaluna.com/{}',
   
   'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
+  
+  'www.neutrondrive.com': 'https://neutron-drive.appspot.com/{}',
+  'neutrondrive.com': 'https://neutron-drive.appspot.com/{}',
 }
 
 class HubHandler (tornado.web.StaticFileHandler):
