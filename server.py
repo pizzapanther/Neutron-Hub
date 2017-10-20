@@ -54,6 +54,12 @@ class HubHandler (tornado.web.StaticFileHandler):
     for domain, value in DOMAINS.items():
       if domain.lower() in self.request.host:
         self.domain = domain.lower()
+        
+        if self.domain == 'www.springfieldcollege1968.com':
+          if not path.startswith('ocapp/'):
+            self.redirect('/ocapp/cms/')
+            return None
+            
         return super(HubHandler, self).get(path, include_body)
         
     for domain, redirect in REDIRECTS.items():
