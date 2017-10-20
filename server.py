@@ -13,9 +13,7 @@ from tornado.log import enable_pretty_logging
 PATH = os.path.abspath(os.path.dirname(__file__))
 
 DOMAINS = {
-  'manx.neutrondrive.com': 'NeutronBlog',
   'neutron-racer.herokuapp.com': 'Neutron-Racer',
-  'blog.neutrondrive.com': 'NeutronBlog',
   'www.godlovedtheworld.com': 'glw-site',
 }
 
@@ -33,8 +31,6 @@ REDIRECTS = {
   
   'godlovedtheworld.com': 'http://www.godlovedtheworld.com/{}',
   
-  'www.neutrondrive.com': 'https://neutron-drive.appspot.com/{}',
-  'neutrondrive.com': 'https://neutron-drive.appspot.com/{}',
 }
 
 class HubHandler (tornado.web.StaticFileHandler):

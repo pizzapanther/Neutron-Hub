@@ -1,9 +1,6 @@
 [submodule "Neutron-Racer"]
 	path = Neutron-Racer
 	url = https://github.com/pizzapanther/Neutron-Racer
-[submodule "NeutronBlog"]
-	path = NeutronBlog
-	url = https://github.com/pizzapanther/NeutronBlog.git
 [submodule "glw-site"]
 	path = glw-site
 	url = https://github.com/pizzapanther/glw-site.git
