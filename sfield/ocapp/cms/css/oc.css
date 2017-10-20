@@ -1,0 +1,425 @@
+/**************     Common Styles     **************/
+body
+{
+	margin: 0px;
+}
+
+.ac
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tc
+{
+	text-align: center;
+}
+
+img
+{
+	border: 0px;
+}
+
+img.block
+{
+	display: block;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.row1
+{
+	background-color: #FFF;
+}
+
+.row2
+{
+	background-color: #CCC;
+}
+
+div.main_pad
+{
+	padding: 2px 10px 10px 10px;
+}
+
+div.message
+{
+	text-align: center;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+span.error
+{
+	color: #FF0000;
+	font-size: small;
+}
+
+div.rounded
+{
+	background-color: #CCC;
+}
+
+div.round_pad
+{
+	padding: 5px 15px 5px 15px;
+}
+
+.indent1
+{
+	padding-left: 20px;
+}
+
+div.abs
+{
+	position: absolute;
+	background-color: transparent;
+	z-index: 10;
+}
+
+div.abs_round
+{
+	background-color: #FFF;
+	width: 370px;
+}
+
+div.abs_pad
+{
+	padding: 8px;
+	text-align: left;
+}
+
+div.hidden
+{
+	display: none;
+}
+
+.small
+{
+	font-size: small;
+}
+
+div.close
+{
+	float: right;
+	width: 100px;
+	margin-right: -15px;
+}
+
+div.pages
+{
+	font-weight: normal;
+	font-size: small;
+}
+
+highlight
+{
+	background-color: yellow;
+	display: inline;
+}
+
+/**************  Photo Gallery Styles **************/
+
+div.galleryControl table
+{
+	width: 100%;
+	font-size: small;
+}
+
+select
+{
+	font-size: 11px;
+}
+
+div.gallery
+{
+	width: 150px;
+	text-align: center;
+	float: left;
+}
+
+/**************  Calendar Styles **************/
+table.calendar
+{
+	width: 100%;
+}
+
+table.calendar td.weekname
+{
+	width: 14%;
+	border:1px solid #CCCCCC;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	font-size: small;
+}
+
+table.calendar td.day
+{
+	border:1px solid #CCCCCC;
+	width: 14%;
+	padding-left: 4px;
+	vertical-align: top;
+	height: 100px;
+	font-size: small;
+}
+
+table.calendar td.day div
+{
+	padding-left: 8px;
+}
+
+td.calfont
+{
+	font-size: small;
+}
+
+table.header
+{
+	width: 100%;
+}
+
+table.header td
+{
+	white-space: nowrap;
+	padding-right: 10px;
+}
+
+span.daynum
+{
+	font-weight: bold;
+}
+
+div.event_details
+{
+	padding-left: 10px;
+}
+
+div.dview
+{
+	padding: 5px 5px 0px 10px;
+}
+
+table.event_info td
+{
+	vertical-align: top;
+	padding: 2px;
+}
+
+table.event_info td.name
+{
+	font-weight: bold;
+	text-align: right;
+	padding-right: 8px;
+}
+
+td.cat_links
+{
+	font-size: small;
+}
+
+/**************  Directory Styles **************/
+td.top_menu
+{
+	padding-top: 5px;
+	font-size: small;
+	text-align: center;
+}
+
+div.dir_result
+{
+	width: 300px;
+	height: 55px;
+	float: left;
+	border: 1px solid #c0c0c0;
+	padding: 4px;
+	margin: 2px;
+	font-size: 75%;
+}
+
+strong.info_title
+{
+	font-size: large;
+}
+
+table.my_input td
+{
+	vertical-align: top;
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+
+fieldset.myinfo
+{
+	width: 525px;
+}
+
+ul.family
+{
+	padding-top: 0px;
+	margin-top: 3px;
+}
+
+/**************  Bulletin Board Styles **************/
+td.forum_list
+{
+	padding-left: 10px;
+}
+
+td.forum_list div
+{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+td.forum_title
+{
+	padding-bottom: 5px;
+}
+
+strong.forum_title
+{
+	padding-top: 10px;
+	font-size: 125%;
+}
+
+td.forum_content
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.forum_toolbar
+{
+	background-color: #C0C0C0;
+}
+
+div.forum_toolbar_pad
+{
+	padding: 0px 10px 0px 10px;
+}
+
+div.fmess
+{
+	padding: 5px;
+}
+
+table.forum
+{
+	width: 100%;
+}
+
+table.forum td
+{
+	padding: 2px 4px 2px 8px;
+}
+
+td.forum_header
+{
+	font-weight: bold;
+	background-color: #808080;
+}
+
+td.forum_shade
+{
+	background-color: #e6e6e6;
+}
+
+img.rss
+{
+	float: right;
+}
+
+div.post
+{
+	border: 2px solid #e6e6e6;
+	margin: 1px;
+}
+
+table.post
+{
+	width: 100%;
+}
+
+table.post td
+{
+	padding: 3px 3px 3px 6px;
+	vertical-align: top;
+	height: 120px;
+}
+
+td.post_user
+{
+	width: 170px;
+}
+
+td.post_message
+{
+	
+}
+
+div.poll
+{
+	padding: 10px 20px 10px 20px;
+	font-weight: normal;
+}
+
+td.poll_bar
+{
+	width: 300px;
+}
+
+div.poll_outline
+{
+	width: 300px;
+	border: 1px solid #000;
+}
+
+div.poll_bar
+{
+	height: 20px;
+}
+
+div.choice
+{
+	padding-bottom: 10px;
+}
+
+div.poll_back0
+{
+	background-color: #FF3300;
+}
+
+div.poll_back1
+{
+	background-color: #FF9933;
+}
+
+div.poll_back2
+{
+	background-color: #956633;
+}
+
+div.poll_back3
+{
+	background-color: #00CC66;
+}
+
+div.poll_back4
+{
+	background-color: #0066FF;
+}
+
+div.poll_back5
+{
+	background-color: #CC33FF;
+}
+

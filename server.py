@@ -15,11 +15,10 @@ PATH = os.path.abspath(os.path.dirname(__file__))
 DOMAINS = {
   'neutron-racer.herokuapp.com': 'Neutron-Racer',
   'www.godlovedtheworld.com': 'glw-site',
+  'www.springfieldcollege1968.com': 'sfield'
 }
 
-REDIRECTS = {
-  'springfieldcollege1968.com': 'http://www.springfieldcollege1968.com/ocapp/cms/',
-  
+REDIRECTS = {  
   'neutronide.com': 'https://super.neutrondrive.com/{}',
   'neutrondev.com': 'https://super.neutrondrive.com/{}',
   

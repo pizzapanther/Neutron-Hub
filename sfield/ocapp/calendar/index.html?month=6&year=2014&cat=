@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>Calendar | Springfield College Class of &#39;68</title>
+
+		<link rel="stylesheet" type="text/css" href="../cms/css/style.css" />
+
+		<link rel="SHORTCUT ICON" href="../cms/favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="../cms/css/oc.css" type="text/css"/>
+
+		<script type="text/javascript" src="../../ocm_static/js/MochiKit/lib/packed/MochiKit/MochiKit.js"></script>
+
+		<script type="text/javascript" src="../../ocm_static/js/default.js"></script>
+
+		
+<script type="text/javascript">
+	function change_cat ()
+	{
+		var cat = get_pull_down('cat', '');
+		location.href = "./?month=6&year=2014&view=month&cat=" + cat;
+	}
+	
+	function go_to ()
+	{
+		var year = document.getElementById('year').value;
+		var month = document.getElementById('month').value;
+		
+		location.href = "./?month=" + month + "&year=" + year + "&cat=&view=month";
+	}
+</script>
+ 
+
+	</head>
+
+	<body>
+
+	<div id="wrap">
+
+	  <div id="header">
+
+	    <div id="logo">
+
+	    	<a href="index.html?month=6&amp;year=2014&amp;cat="><img src="../cms/images/seal_small.png" alt="Springfield College Seal" align="left"/></a>
+
+			<h1>&nbsp;Springfield&nbsp;College</h1>
+
+	    	<div>Class of '68</div>
+
+	    </div>
+
+	    <ul id="nav">
+
+	      <li><a href="../../robots.txt">Home</a></li>
+
+	      <li><a href="index.html">Calendar</a></li>
+
+	      <li><a href="../directory/index.html">Directory</a></li>
+
+	      <li><a href="../forums/1/index.html">Message&nbsp;Board</a></li>
+
+		  <li><a href="../photos/index.html">Photos</a></li>
+
+	    </ul>
+
+	  </div>
+
+	  <!-- /header -->
+
+	  <div id="content">
+
+	  	<div id="content_container">
+
+			<div id="content_inner">
+
+			
+<table class="calendar" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="7">
+			<table class="header">
+				<tr>
+					<td><strong>June 2014</strong></td>
+					<td class="calfont">
+						Category: 
+						<select name="cat" id="cat" onchange="change_cat()">
+							<option value="">All</option>
+							<option disabled>---------------</option>
+							
+							<option disabled>---------------</option>
+							
+						</select>&nbsp; |&nbsp; 
+						Month: 
+						<select name="month" id="month">
+							
+							<option value="1">January</option>
+							
+							<option value="2">February</option>
+							
+							<option value="3">March</option>
+							
+							<option value="4">April</option>
+							
+							<option value="5">May</option>
+							
+							<option value="6" selected="selected">June</option>
+							
+							<option value="7">July</option>
+							
+							<option value="8">August</option>
+							
+							<option value="9">September</option>
+							
+							<option value="10">October</option>
+							
+							<option value="11">November</option>
+							
+							<option value="12">December</option>
+							
+						</select> 
+						<select name="year" id="year">
+							
+							<option value="2009">2009</option>
+							
+							<option value="2010">2010</option>
+							
+							<option value="2011">2011</option>
+							
+							<option value="2012">2012</option>
+							
+							<option value="2013">2013</option>
+							
+							<option value="2014" selected="selected">2014</option>
+							
+							<option value="2015">2015</option>
+							
+							<option value="2016">2016</option>
+							
+							<option value="2017">2017</option>
+							
+							<option value="2018">2018</option>
+							
+							<option value="2019">2019</option>
+							
+						</select> 
+						<input type="button" name="go" value="Go" onclick="go_to()"/>
+					</td>
+					<td align="right" class="calfont">
+						
+						<a href="index.html?month=6&amp;year=2014&amp;view=detail&amp;cat=">Detailed View</a>&nbsp; |&nbsp; 
+						
+						<a href="ical/index.html">iCal</a>&nbsp; |&nbsp; 
+						<a href="index.html?month=5&amp;year=2014&amp;cat="><img src="../../ocm_static/images/larrow.gif" alt="Previous Month"/></a> 
+						Month 
+						<a href="index.html?month=7&amp;year=2014&amp;cat="><img src="../../ocm_static/images/rarrow.gif" alt="Next Month"/></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="weekname">Sunday</td>
+		<td class="weekname">Monday</td>
+		<td class="weekname">Tuesday</td>
+		<td class="weekname">Wednesday</td>
+		<td class="weekname">Thursday</td>
+		<td class="weekname">Friday</td>
+		<td class="weekname">Saturday</td>
+	</tr>
+	
+	<tr>
+		
+		<td class="day">
+			
+			<span class="daynum">1</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">2</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">3</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">4</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">5</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">6</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">7</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="day">
+			
+			<span class="daynum">8</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">9</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">10</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">11</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">12</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">13</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">14</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="day">
+			
+			<span class="daynum">15</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">16</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">17</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">18</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">19</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">20</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">21</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="day">
+			
+			<span class="daynum">22</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">23</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">24</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">25</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">26</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">27</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">28</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="day">
+			
+			<span class="daynum">29</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			
+			<span class="daynum">30</span>
+			<div>
+				
+			</div>
+			
+		</td>
+		
+		<td class="day">
+			&nbsp;
+		</td>
+		
+		<td class="day">
+			&nbsp;
+		</td>
+		
+		<td class="day">
+			&nbsp;
+		</td>
+		
+		<td class="day">
+			&nbsp;
+		</td>
+		
+		<td class="day">
+			&nbsp;
+		</td>
+		
+	</tr>
+	
+	
+</table>
+
+
+			</div>
+
+		</div>
+
+	    <!-- /content -->
+
+	  </div>
+
+	  <div class="clearfix"></div>
+
+	  <div id="footer" style="padding-top: 5px;">
+
+	    <div id="ftinner">
+
+	      <div class="ftlink fl"> <a href="../../robots.txt">Home</a> | <a href="index.html">Calendar</a> | <a href="../directory/index.html">Directory</a> | <a href="../forums/1/index.html">Message Board</a> | <a href="../photos/index.html">Photos</a> | <a href="../admin/index.html">Admin</a>
+
+	        <p id="copyright">&copy; 2008. All Rights Reserved. <br/>
+
+	          Designed by <a href="http://www.free-css-templates.com/">Free CSS Templates</a>.</p>
+
+	      </div>
+
+	      <div class="valid fl" style="text-align: center;">
+
+		  	<div>Site Built and Maintained by:</div>
+
+	      	<a href="http://www.interstellar-tech.com/"><img src="../cms/images/it_logo.png" alt="Interstellar Technologies"/></a>
+
+	      </div>
+
+	    </div>
+
+	  </div>
+
+	  <!-- /footer -->
+
+	</div>
+
+	</body>
+
+</html>
+

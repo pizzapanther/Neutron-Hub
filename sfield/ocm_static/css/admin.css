@@ -1,0 +1,593 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #88D585;
+}
+
+img
+{
+	border: 0px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.ac
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tc
+{
+	text-align: center;
+}
+
+div.form_pad
+{
+	height: 15px;
+}
+
+div.form_pad_small
+{
+	height: 8px;
+}
+
+table.container
+{
+	width: 97%;
+}
+
+table.main_table  {
+	border: 2px solid #184D18;
+	width: 100%;
+	background-color: #FFF;
+}
+
+table.main_table td
+{
+	padding: 2px;
+}
+
+tr.nav
+{
+	background-color: #184D18;
+	color: #FFFFFF;
+}
+
+tr.nav a
+{
+	color: #FFFFFF;
+}
+
+td.navmenu
+{
+	text-align: right;
+}
+
+td.pagetitle
+{
+	font-weight: bold;
+}
+
+iframe.secure_login
+{
+	border: #184D18 solid 1px;
+}
+
+div.message
+{
+	color: #FF0000;
+	text-align: center;
+	font-weight: bold;
+}
+
+i.message
+{
+	color: #FF0000;
+	font-size: small;
+}
+
+div.link_block
+{
+	border: #184D18 solid 2px;
+	float: left;
+	width: 300px;
+	height: 225px;
+	margin: 5px;
+}
+
+table.link_block
+{
+	width: 100%;
+}
+
+table.link_block td
+{
+	padding: 3px;
+}
+
+ul.links
+{
+	padding-top: 2px;
+	padding-left: 23px;
+	margin-top: 0px;
+}
+
+td.block_title
+{
+	color: #FFF;
+	background-color: #184D18;
+}
+
+div.content
+{
+	padding: 10px 10px 20px 10px;
+}
+
+tr.row1
+{
+	background-color: #FFFFFF;
+}
+
+tr.row2
+{
+	background-color: #EEF6E4;
+}
+
+div.domains, div.perms
+{
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+table.results
+{
+	width: 100%;
+}
+
+table.results td, table.results_small td
+{
+	padding: 6px 8px 6px 4px;
+}
+
+table.small_pad
+{
+	width: 100%;
+}
+
+table.small_pad td
+{
+	padding: 3px 4px 3px 2px;
+	font-size: 75%;
+}
+
+table.results_small td.cms_commands
+{
+	font-size: 75%;
+	padding-left: 30px;
+}
+
+table.line_result
+{
+	width: 600px;
+}
+
+table.line_result td
+{
+	border-bottom: #184D18 dashed 1px;
+	padding: 3px 5px 3px 5px;
+}
+
+div.hidden
+{
+	display: none;
+}
+
+div.abs
+{
+	position: absolute;
+	background-color: transparent;
+}
+
+div.abs_round_admin
+{
+	background-color: #FFF;
+	width: 350px;
+}
+
+div.abs_pad
+{
+	padding: 8px;
+}
+
+div.close
+{
+	float: right;
+}
+
+img.inline
+{
+	margin-bottom: -2px;
+}
+
+div.json_wait
+{
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-image: url(../images/admin/trans.png);
+}
+
+div.json_wait_message
+{
+	background-color: #FFF;
+	width: 400px;
+	height: 300px;
+}
+
+div.json_wait_message table td
+{
+	width: 400px;
+	height: 290px;
+	white-space: nowrap;
+}
+
+div.pitem
+{
+	float: left;
+	width: 220px;
+	font-size: small;
+}
+
+div.pchk
+{
+	float: left;
+}
+
+div.plabel
+{
+	float: left;
+	padding-top: 2px;
+}
+
+div.help_pad
+{
+	padding: 5px;
+	font-size: small;
+	background-color: #FFF;
+}
+
+div.cms_commands
+{
+	font-size: 75%;
+	padding-left: 20px;
+}
+
+div.domain_tmpl
+{
+	font-size: small;
+	float: left;
+	padding: 2px 7px 2px 2px;
+	width: 270px;
+	text-align: right;
+	white-space:nowrap;
+}
+
+select.domain_tmpl
+{
+	font-size: x-small;
+}
+
+a.hide_dir
+{
+	font-size: small;
+	padding-left: 15px;
+}
+
+span.small
+{
+	font-size: small;
+}
+
+td.vr
+{
+	background-image: url(../images/admin/vr.png);
+	background-repeat: repeat-y;
+	background-position: center center;
+}
+
+ul.cats
+{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+table.form_inputs td
+{
+	padding: 5px 15px 5px 15px;
+	vertical-align: top;
+}
+
+div.gallery
+{
+	width: 150px;
+	text-align: center;
+	float: left;
+}
+
+.small
+{
+	font-size: small;
+}
+
+span.error
+{
+	font-size: small;
+	color: #F00;
+}
+
+table.cal_results
+{
+	font-size: small;
+	width: 100%;
+	border-top: #184d18 solid 2px;
+}
+
+table.cal_results td
+{
+	padding: 2px 2px 2px 5px;
+}
+
+.header
+{
+	background-color: #e5e5e5;
+}
+
+.tb_lines
+{
+	border-bottom: #184d18 solid 2px;
+	border-top: #184d18 solid 2px;
+}
+
+div.cal_filter
+{
+	padding-left: 5px;
+}
+
+div.cal_filter ul
+{
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-left: 15px;
+	list-style: none;
+}
+
+div.cal_filter ul li
+{
+	
+}
+
+div.dir_result
+{
+	width: 300px;
+	height: 55px;
+	float: left;
+	border: 1px solid #184d18;
+	padding: 4px;
+	margin: 2px;
+	font-size: 75%;
+}
+
+div.pb_bar
+{
+	background-color: #F00;
+	height: 20px;
+	width: 1px;
+}
+
+div.pb_outline
+{
+	width: 300px;
+	border: 1px solid #000;
+}
+
+ul.none li
+{
+	list-style: none;
+}
+
+li.pb
+{
+	padding-bottom: 8px;
+}
+
+div.ptag
+{
+	font-size: small;
+	float: left;
+	width: 180px;
+	white-space: nowrap;
+}
+
+.indent1
+{
+	padding-left: 20px;
+}
+
+table.padl td
+{
+	padding-left: 8px;
+}
+
+div.format_sel
+{
+	font-size: small;
+	float: left;
+	width: 200px;
+}
+
+input.flash
+{
+	width: 275px;
+	border: solid 1px;
+	background-color: #FFFFFF;
+}
+
+div.quota
+{
+	display: none;
+	font-size: small;
+	border: 1px groove #184d18;
+	padding: 4px;
+}
+
+.large
+{
+	font-size: 125%;
+}
+
+ul.cdir
+{
+	margin: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+ul.cdir li
+{
+	width: 500px;
+}
+
+ul.cdir li.cdir
+{
+	border-bottom: 1px dashed #184d18;
+	margin-bottom: 8px;
+}
+
+div.preview
+{
+	border: 1px solid #184D18;
+	margin-top: 100px;
+}
+
+.show_preview:hover div.preview
+{
+	display: block;
+}
+
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+ border-bottom: 1px solid #778;
+ font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ border: 1px solid #778;
+ border-bottom: none;
+ background: #88D585;
+ text-decoration: none;
+}
+
+ul.tabbernav li a:link { color: #000; }
+ul.tabbernav li a:visited { color: #000; }
+
+ul.tabbernav li a:hover
+{
+ color: #000;
+ background: #AAE;
+ border-color: #227;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ border-bottom: 1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ color: #000;
+ background: white;
+ border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:5px;
+ border:1px solid #aaa;
+ border-top:0;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}

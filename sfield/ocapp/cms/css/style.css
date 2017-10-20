@@ -1,0 +1,499 @@
+/* CSS RESET */
+
+html
+
+{
+
+	color: #000;
+
+	background: #FFF;
+
+}
+
+img
+{
+
+	border:0;
+
+}
+
+
+
+#nav li
+
+{
+
+	list-style:none;
+
+}
+/* CSS RESET */
+
+
+
+
+
+body
+
+{
+
+	text-align:center;
+
+	color:#000;
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+a
+
+{
+
+	text-decoration:none;
+
+	color:#9b3535; 
+
+}
+
+a:hover
+
+{
+
+	text-decoration: underline;
+
+	color: #CC0000
+
+}
+
+
+
+#wrap
+
+{
+
+	width:900px;
+
+	text-align:left;
+
+	margin:0 auto;
+
+	background:url(../images/bg.jpg); 
+	padding: 0px;
+}
+
+
+
+.fl
+
+{
+
+	float:left;
+
+}
+
+
+
+
+
+.fr
+
+{
+
+	float:right;
+
+}
+
+
+
+.clearfix
+
+{
+
+	clear:both;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
+/* header */
+
+#header
+
+{
+	position:relative;
+	padding: 0px;
+	margin: 0px;
+	height:111px;
+	background:url(../images/hd.jpg);
+}
+
+
+
+#logo
+
+{
+
+	position:absolute;
+	top:30px;
+	left:45px;
+	white-space: nowrap;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+#logo h1
+{
+
+	font-size:30px;
+	color: #701224;
+	margin: 0px;
+	padding: 0px;
+	font-weight:normal;
+}
+
+
+
+#logo div
+{
+
+	padding-left: 85px;
+	padding-top: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+
+
+#nav
+{
+
+	position:absolute;
+
+	top:35px;
+
+	left:400px;
+
+	width:451px;
+
+	height:30px;
+
+	line-height:30px;
+
+	padding:0 0 0 15px;
+	margin: 0px;
+}
+
+#nav li
+
+{
+
+	float:left;
+
+	font-weight:700;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+
+}
+
+
+
+#nav a
+
+{
+
+	text-decoration:none;
+
+	display:block;
+
+	text-align:center;
+
+	color:#fff
+
+}
+
+
+
+#nav a:hover
+
+{
+
+	background: #7c2939;
+
+	color:#000000
+
+}
+
+/* content */
+
+
+
+.img
+
+{
+
+	margin:0px 0  0 70px 
+
+}
+
+
+
+.main
+
+{
+
+	width:440px;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+	background:url(http://www.springfieldcollege1968.com/ocapp/cms/images/box.jpg);
+
+	color:#000;
+
+}
+
+
+
+#text
+
+{
+
+	margin:0px 0  0 65px
+
+}
+
+
+
+#text p
+
+{
+
+	margin:0 auto;
+
+	width:420px;
+
+}
+
+
+
+#text h2
+
+{
+
+	font-size:30px;
+
+	padding:20px 0 20px 0
+
+}
+
+
+
+#text img
+
+{
+
+	margin:10px 0  0 0
+
+}
+
+
+
+#col {
+
+	margin:30px 0  10px 65px ;
+
+	width:300px;
+
+	background:url(../images/col.jpg);
+
+	width: 419px;
+
+	height:161px;
+
+}
+
+
+
+#col div
+
+{
+
+	width: 150px;
+
+	margin: 20px 0 0  10px;
+
+	display:inline
+
+}
+
+
+
+#col .first
+
+{
+
+	margin: 20px 30px 0 20px;
+
+}
+
+
+
+#col li
+
+{
+
+	line-height:20px;
+
+	list-style:inside disc;
+
+	color:#9b3535;
+
+}
+
+
+
+#col a
+
+{
+
+	color:#9b3535;
+
+	text-decoration:underline;
+
+}
+
+
+
+.side
+
+{
+
+	width:320px;
+
+	display: inline;
+
+}
+
+
+
+.side h2
+
+{
+
+	font-size:22px
+
+}
+
+
+
+.side li
+
+{
+
+	line-height:20px;
+
+	list-style:inside disc;
+
+	color:#9b3535;
+
+}
+
+
+
+.side ul
+
+{
+
+	margin:20px  0 30px 20px
+
+}
+
+
+
+#top
+
+{
+
+	margin-top:20px
+
+}
+
+/* footer */
+
+#footer
+
+{
+
+	background:url(../images/ft.jpg);
+
+	height:100px;
+
+	position:relative
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+#ftinner
+
+{
+
+	width:750px;
+
+	margin-left:80px;
+	margin-top: 23px;
+	color:#E98383
+	padding: 0px;
+}
+
+
+
+#ftinner a
+
+{
+
+	color:#FFFFFF
+
+}
+
+
+
+.ftlink
+
+{
+
+	width:400px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+div#content_container
+
+{
+
+	margin-left: auto;
+
+	margin-right: auto;
+	padding: 0px;
+	width: 770px;
+
+}
+
+
+
+div#content_inner
+
+{
+
+	margin-left: -10px;
+	padding: 0px;
+
+}
+

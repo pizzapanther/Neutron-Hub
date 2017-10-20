@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Open Church Administration</title>
+		<script type="text/javascript" src="../../ocm_static/js/MochiKit/lib/packed/MochiKit/MochiKit.js"></script>
+		<script type="text/javascript" src="../../ocm_static/js/default.js"></script>
+		<link type="text/css" rel="stylesheet" href="../../ocm_static/css/admin.css">
+		
+<script type="text/javascript">
+	function login ()
+	{
+		document.getElementById('message').innerHTML = 'Logging In, Please Wait ....';
+		var e = document.getElementById('email').value;
+		var p = document.getElementById('password').value;
+		var s = document.getElementById('skey').value;
+		var u = document.getElementById('url').value;
+		
+		var d = loadJSONDocPOST('./', 'task=login&email=' + encodeURIComponent(e) + '&password=' + encodeURIComponent(p) + '&skey=' + encodeURIComponent(s) + '&url=' + encodeURIComponent(u));
+		d.addCallbacks(login_ret, json_failure);
+		
+		return false;
+	}
+	
+	function login_ret (meta)
+	{
+		document.getElementById('message').innerHTML = meta.message;
+		if (meta.result == 0){}
+		else
+		{
+			parent.location.href = document.getElementById('url').value;
+		}
+	}
+</script>
+<style type="text/css">
+
+body
+{
+  background-color: #FFF;
+  color: #000;
+}
+
+
+
+</style>
+
+	</head>
+	<body>
+		
+<div class="message" id="message" style="padding-top: 10px; padding-bottom: 10px;">Please Login</div>
+<table class="ac">
+	<tr>
+		<td>
+			<form action="index.html?did=3&amp;url=http:%252F%252Fwww.springfieldcollege1968.com%252Focapp%252Fforums%252Ftopic%252F29%252Faddpost%252F&amp;skey=1545d78af37496e854d1f5d7602361bb&amp;message=Please&#32;Login" onsubmit="return login()">
+				<input type="hidden" name="url" id="url" value="http://www.springfieldcollege1968.com/ocapp/forums/topic/29/addpost/"/>
+				<input type="hidden" name="skey" id="skey" value="1545d78af37496e854d1f5d7602361bb"/>
+				E-Mail:<br/>
+				<input type="text" name="email" id="email" size="25"/>
+				<div class="form_pad"></div>
+				Password:<br/>
+				<input type="password" size="25" name="password" id="password"/>
+				<div class="form_pad"></div>
+				<input type="submit" name="task" id="task" value="Login" onclick="return login()"/>
+			</form>
+		</td>
+	</tr>
+</table>
+
+	</body>
+</html>
